@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Tab } from "./components/Tab";
+import { MenuButton } from "./components/MenuButton";
+import { StarRating } from "./components/StarRating";
+import Debounce from "./components/Debounce";
+import { AutoSearch } from "./components/AutoSearch";
+import { Carousel } from "./components/Carousel";
+import { Accordian } from "./components/Accordian";
+import { Progress } from "./components/Progress";
+import { InfiniteScroll } from "./components/InfiniteScroll";
+import { Pagination } from "./components/Pagination";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="h-screen w-screen flex justify-between ">
+      <Pagination />
     </div>
   );
 }
