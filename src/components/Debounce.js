@@ -4,9 +4,7 @@ const Debounce = () => {
   const [searchQuery, setSearchQuery] = useState("");
 
   useEffect(() => {
-    const timerId = setTimeout(() => {
-      console.log(searchQuery);
-    }, 200);
+    const timerId = setTimeout(() => {}, 200);
 
     return () => clearTimeout(timerId);
   }, [searchQuery]);
