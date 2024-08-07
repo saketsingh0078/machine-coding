@@ -11,13 +11,25 @@ import { InfiniteScroll } from "./components/InfiniteScroll";
 import { Pagination } from "./components/Pagination";
 import { TodoList } from "./components/TodoList";
 import { ProductPage } from "./components/ProductPage";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./components/Home";
+import Protected from "./components/Protected";
+import { Login } from "@mui/icons-material";
 
 function App() {
   const [cardData, setCardData] = useState([]);
 
   return (
     <div className="h-screen w-screen flex justify-between ">
-      <ProductPage setCardData={setCardData} cardData={cardData} />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route element={<Protected />}>
+            <Route path="/accordian" element={<Accordian />} />
+          </Route>
+          <Route path="/login" element={<Login />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
