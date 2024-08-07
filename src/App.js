@@ -24,10 +24,21 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route element={<Protected />}>
-            <Route path="/accordian" element={<Accordian />} />
-          </Route>
+          <Route element={<Protected />} />
+          <Route path="/accordian" element={<Accordian />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/accordian" element={<Accordian />} />
+          <Route path="/autosearch" element={<AutoSearch />} />
+          <Route path="/infinitescroll" element={<InfiniteScroll />} />
+          <Route path="/menubutton" element={<MenuButton />} />
+          <Route path="/pagination" element={<Pagination />} />
+          <Route path="/productpage" element={<ProductPage />} />
+          <Route path="/progress" element={<Progress />} />
+          <Route path="/starrating" element={<StarRating />} />
+          <Route path="/tab" element={<Tab />} />
+          <Route path="/todolist" element={<TodoList />} />
+          <Route path="/carousel" element={<Carousel />} />
+          <Route path="/debounce" element={<Debounce />} />
         </Routes>
       </BrowserRouter>
     </div>
