@@ -43,6 +43,9 @@ const Home = () => {
       <Link className="border-2 border-solid rounded-md p-2" to="/debounce">
         Debounce
       </Link>
+      <Link className="border-2 border-solid rounded-md p-2" to="/comment">
+        Comment
+      </Link>
     </div>
   );
 };

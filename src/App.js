@@ -15,6 +15,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./components/Home";
 import Protected from "./components/Protected";
 import { Login } from "@mui/icons-material";
+import Comment from "./components/Comment";
 
 function App() {
   const [cardData, setCardData] = useState([]);
@@ -39,6 +40,7 @@ function App() {
           <Route path="/todolist" element={<TodoList />} />
           <Route path="/carousel" element={<Carousel />} />
           <Route path="/debounce" element={<Debounce />} />
+          <Route path="/comment" element={<Comment />} />
         </Routes>
       </BrowserRouter>
     </div>
